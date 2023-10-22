@@ -226,7 +226,8 @@ function init(){
       div.innerHTML += "<h4>Species</h4>";
       for (let i = 0; i < species.length; i++) {
         /*div.innerHTML += '<i style="background: #A24ABF"></i>';*/
-        div.innerHTML += '<i style="background:' + colors[i] + '"></i><button onclick="togglePoints(' + species[i] + ',' + i+');">' + species[i]+'</button><br>';
+        /*div.innerHTML += '<i style="background:' + colors[i] + '"></i><button onclick="togglePoints(' + species[i] + ',' + i+');">' + species[i]+'</button><br>';*/
+        div.innerHTML += ' <div style="background:' + colors[i] + '; color:white; display:flex; justify-content:space-between; padding:5px">' + species[i] + ' <input type="checkbox", checked="checked" class="regular-checkbox", onchange="togglePoints(' + species[i] + ',' + i+');"' + species[i] + '" name="' + species[i] + '> <label for="' + species[i] + '"> </label> </div>';
       } 
 
       return div;
