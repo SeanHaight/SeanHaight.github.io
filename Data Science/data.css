@@ -1,0 +1,35 @@
+#header{
+    background-color: #6990F5;
+    padding: 0;
+    margin: 0;
+}
+
+#nav{
+    background-color: #86A06B;
+    display: flex;
+    justify-content: space-around;
+}
+
+#about{
+    background-color: #DCF4C2;
+    height:fit-content;
+    overflow: auto;
+}
+
+#portrait{
+    float: left;
+}
+
+/* Colors: 
+
+    Salmon: #F58369
+    Light Blue: #6990F5
+    Light Green: #DCF4C2
+    Darker Green: #86A06B
+    Grey: #756E64
+*/
+
+#project{
+    background-color: #DCF4C2;
+}
+

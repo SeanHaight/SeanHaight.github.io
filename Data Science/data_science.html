@@ -1,21 +1,42 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="data.css">
     <meta charset="utf-8">
-    <title>Data Science</title>
+    <title>Sean Haight</title>
   </head>
   <body>
     <div id="header">
-      <h1>
+      <h1 style="text-align: center;">
         Sean Haight
       </h1>
     </div>
     <div id="nav">
-        <a href="../index.html">Home</a>
-        <a href="../Mathematics/mathematics.html">Mathematics</a>
-        <a href="../Nature/nature.html">Nature</a>
-        <a href="../Art/art.html">Art</a>
-      
+      <a href="../index.html">Home</a>
+      <a href="Mathematics/mathematics.html">Mathematics</a>
+      <a href="Nature/nature.html">Nature</a>
+      <a href="Art/art.html">Art</a>
     </div>
+    <div id="project_container">
+      <div id="project">
+        <h1> Arbutus Map</h1>
+        I used iNaturalist data to create a range map for the species in the genus <a href="https://www.inaturalist.org/taxa/51047-Arbutus"> Arubuts</a>.
+        Rather than mapping individual observations I wrote a clustering algorthim to group the observations into reasonable populations and constructed polygons for each population.
+        You can find the map <a href="../GeoDjango/index.html"> here </a> and the github with all the code <a href=https://github.com/SeanHaight/madroneRange>here </a>. 
+      </div>
+      <div id="project">
+        <h1> Salmon Viability</h1>
+        Working together with three other students I modeled Salmon viability in the Strait of Georgia using a wide variety of environmental factors. 
+        You can find a link to the github <a href="https://github.com/SeanHaight/SalmonPopulationProject">here</a>.
+      </div>
+      <div id="project">
+        <h1> Plant Phenology Labeling </h1>
+        I developed a image classification model to distinguish between photos of roses in bloom and those that are not in bloom. 
+        To do this I trained a convolutional neural network on 4000 labeled iNaturalist images. 
+        For just roses I achieved a generalization accuracy of 93%. 
+        I'm currently working to expand this model from just roses to all angiosperms in the Northwest, excluding Poaceae (grasses).
+        You can find the github <a href="https://github.com/SeanHaight/FlowerIdentificationProject">here</a>.   
+      </div>
+  </div>
   </body>
 </html>
