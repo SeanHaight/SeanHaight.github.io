@@ -4,10 +4,19 @@
     margin: 0;
 }
 
+h1{
+    margin: 0;
+}
+
 #nav{
     background-color: #86A06B;
     display: flex;
     justify-content: space-around;
+    margin-top:0px;
+}
+
+#nav_item{
+    display: block;
 }
 
 #about{
@@ -20,6 +29,24 @@
     float: left;
 }
 
+.caption{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top:0px
+}
+
+.card {
+    height:300px;
+    width:300px;
+    border-radius: 75px;
+    transform: scale(1);
+    transition: transform .5s;
+    padding:10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
 /* Colors: 
 
     Salmon: #F58369
