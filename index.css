@@ -1,22 +1,62 @@
-#header{
-    background-color: #6990F5;
+header{
+    font-size: 4em;
     padding: 0;
     margin: 0;
+}
+
+:root {
+    --black: #4f6e51;
+    --pink: #E5E8D7;
+    --blue: #37a987;
+    --neutral:white;
+}
+
+#app {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+body {
+    align-items: flex-start;
+    background-color: var(--black);
+    color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    font-family: "IBM Plex Sans", sans-serif;
+    height: 100%;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 1rem;
 }
 
 h1{
     margin: 0;
 }
 
-#nav{
-    background-color: #86A06B;
-    display: flex;
-    justify-content: space-around;
-    margin-top:0px;
+nav {
+    display: grid;
+    gap: 6.5vh;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
 }
 
 #nav_item{
-    display: block;
+    grid-row: 1;
+    line-height: 2.6rem;
+    font-size:2em;
+}
+
+main {
+    display: grid;
+    font-size: 1.5rem;
+    color: var(--neutral);
+    gap: 1vh;
+    height: 100%;
+    width: 100%;
+    padding: 3.5rem 0rem 0 0;
 }
 
 #about{
