@@ -3,13 +3,14 @@
   <head>
     <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
+    <script src="index.js"></script>
     <title>Sean Haight</title>
   </head>
   <body>
     <div id="app">
       <header> Sean Haight </header>
       <nav>
-        <div id="nav_item">
+        <div id="nav_item" onclick="replaceMain('Data Science')">
           Data Science
         </div>
         <div id="nav_item">
@@ -19,9 +20,9 @@
           Nature
         </div>
       </nav>
-      <main>
+      <main id="main">
         <div style="display:flex; flex-direction: row;">
-          <img id="portrait" style="margin-right: 1rem" src="Images/sean.jpg" width="250rem" length="250rem">
+          <img id="portrait" style="margin-right: 1rem" src="Images/sean.jpg" width="260rem" length="250rem">
 
           <div>
             I am a 6th year Ph. D. student at the University of Oregon studying under the direction of Dr. Ellen Eischen.
