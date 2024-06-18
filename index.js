@@ -39,12 +39,19 @@ function replaceMain(tab) {
     </div>
     `
     }
-    else if (tab == 'research') {
-      el.innerHTML = `<h3>
-        I am interested in number theory and combinatorics, particularly using analytic methods.
-        <br>The following is a list of papers I've worked on.
-        <br><br>
-      </h3>`
+    else if (tab == 'Home') {
+      el.innerHTML = `<div style="display:flex; flex-direction: row;">
+      <img id="portrait" style="margin-right: 1rem; margin-top:1rem;" src="Images/sean.jpg" width="260rem" height="250rem">
+
+      <div>
+        I am a 6th year Ph. D. student at the University of Oregon studying under the direction of Dr. Ellen Eischen.
+        I am currently seeking data science positions in the greater Seattle area. 
+        You can find several data driven projects I've worked on over the last year under the data science tab.
+        My dissertation generalizes the theory of Hermitian Jacobi forms to degree greater than 2 and gives some non-vanishing results for the Fourier coefficients
+        of Hermitian modular forms as a consequence. Outside of math I am interested in the natural world. I am very active on <a href = "https://www.inaturalist.org/people/3861712">iNaturalist</a> 
+        both with the uploading of my own observations and with the identification of others. You can see some of the best photos I've taken under the Nature tab.
+      </div>
+    </div>`
       
       for (let i = 0; i < paperList.length; i++) {
         const { title, journal_title, journal_link, year, pdf_link } =  paperList[i];
