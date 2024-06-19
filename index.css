@@ -72,6 +72,11 @@ main {
     float: left;
 }
 
+#Nature_Photo{
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
 .caption{
     text-align: center;
     margin-bottom: 10px;

@@ -52,10 +52,32 @@ function replaceMain(tab) {
         both with the uploading of my own observations and with the identification of others. You can see some of the best photos I've taken under the Nature tab.
       </div>
     </div>`
-      
-      for (let i = 0; i < paperList.length; i++) {
-        const { title, journal_title, journal_link, year, pdf_link } =  paperList[i];
-        el.append(paperGen(title, journal_title, journal_link, year, pdf_link));
-      }
+    }
+    else if (tab == 'Mathematics') {
+      el.innerHTML = `
+      <div style="display:flex; flex-direction: column;">
+        <div style="display:flex; flex-direction: row; margin-bottom:2rem;">
+            <img id="portrait" style="margin-right: 1rem" src="Images/The_modular_group_PSL_2(Z).png" width="260rem" length="250rem">
+
+            <div>
+                As a PhD student at University of Oregon I studied Hermitian Jacobi Forms under Dr. Ellen Eischen.
+                My thesis extends Klaus Haverkamp's "Hermitian Jacobi Forms" to higher degree and gives some non-vanishing results for Fourier coefficients of Hermitian modular forms as a consequence.
+                You can find a link to my dissertation <a href="Documents/Hermitian_Jacobi_Forms_of_Higher_Degree.pdf">here</a>.
+            </div>
+        </div>
+    </div>
+    `
+    }
+    else if (tab == 'Nature') {
+      el.innerHTML = `
+      <div style="display:flex; flex-direction: column;">
+          <img id ="Nature_Photo" src="Images/Nature Photos/C_leichtlinii.jpeg">
+          <img id ="Nature_Photo" src="Images/Nature Photos/E_dorsatum.jpg">
+          <img id ="Nature_Photo" src="Images/Nature Photos/E_lacteata.jpeg">
+          <img id ="Nature_Photo" src="Images/Nature Photos/K_fragrans.jpg">
+          <img id ="Nature_Photo" src="Images/Nature Photos/M_uniflora.jpeg">
+          <img id ="Nature_Photo" src="Images/Nature Photos/C_bubulcus.jpeg">
+    </div>
+    `
     }
   };
