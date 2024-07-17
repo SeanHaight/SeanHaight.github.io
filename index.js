@@ -32,8 +32,8 @@ function replaceMain(tab) {
                 I developed a image classification model to distinguish between photos of roses in bloom and those that are not in bloom. 
                 To do this I trained a convolutional neural network on 4000 labeled iNaturalist images. 
                 For just roses I achieved a generalization accuracy of 93%. 
-                I'm currently working to expand this model from just roses to all angiosperms in the Northwest, excluding Poaceae (grasses).
-                You can find the github <a href="https://github.com/SeanHaight/FlowerIdentificationProject">here</a>.   
+                I recently expanded this project to include all angiosperms in the Northwest, excluding Poaceae (grasses).
+                You can find the github <a href="https://github.com/SeanHaight/FlowerIdentificationProject">here</a> and a link to a deployment of the functioning model <a href="https://inbloomapp-production.up.railway.app/"> here </a>.   
             </div>
         </div>
     </div>
